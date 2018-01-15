@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+
+body {
+    background: #000;
+}
+
+main {
+    padding: 20px;
+}
+
+nav {
+    padding: 10px 40px;
+}
+
+p, a {
+    font-size: 14px;   
+    color: rgb(57, 206, 11);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
