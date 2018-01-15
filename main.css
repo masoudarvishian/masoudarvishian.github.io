@@ -57,7 +57,7 @@ body {
 	position: relative;
 }
 .typed_wrap {
-	width: 440px;
+	width: 40vw;
 	font-size: 12px;
     font-weight: normal;
     display: block;
@@ -123,4 +123,16 @@ a:hover {
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+@media only screen and (max-width: 800px)  {
+    .typed_wrap {
+        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1024px)  {
+    .typed_wrap {
+        width: 40vw;
+    }
 }
