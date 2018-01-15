@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -18,6 +18,54 @@ nav {
 }
 
 p, a {
+    font-size: 16px;   
+    color: rgb(57, 206, 11);
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#name {
+    border-bottom: 1px dotted rgb(57, 206, 11);
+    cursor: help;
+} */
+
+body {
+	background: #000;
+	color: #ecf0f1;
+	margin: 0;
+	padding: 0;
+	font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+	color: rgb(57, 206, 11);
+}
+
+.banner {
+	display: block;
+	min-height: 200px;
+	width: 100%;
+	position: relative;
+}
+.typed_wrap {
+	width: 440px;
+	font-size: 12px;
+    font-weight: normal;
+    display: block;
+    height: auto;
+    padding: 30px;
+}
+
+p, a {
     font-size: 14px;   
     color: rgb(57, 206, 11);
 }
@@ -34,4 +82,44 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.typed_wrap p {
+	display: inline;
+	line-height: 30px;
+}
+
+.links {
+	padding: 10px 90px;
+}
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed_wrap p::after { 
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+   display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

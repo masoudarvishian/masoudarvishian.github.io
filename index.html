@@ -3,20 +3,134 @@
 
 <head>
     <title>Masoud Darvishian's Website</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script>
+        $(function () {
+            $(".typed1").typed({
+                strings: [
+                    "Hi"
+                    // ", I'm Masoud Darvishian  and I make video games.",
+                    // "If you would like to find me online follow the links below!"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 30,
+                // time before typing starts
+                startDelay: 1200
+            });
+            $(".typed2").typed({
+                strings: [
+                    // "Hi",
+                    ", I'm Masoud Darvishian  and I make video games."
+                    // "If you would like to find me online follow the links below!"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 30,
+                // time before typing starts
+                startDelay: 2000
+            });
+            $(".typed3").typed({
+                strings: [
+                    // "Hi",
+                    // ", I'm Masoud Darvishian  and I make video games."
+                    "If you would like to find me online follow the links below!"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 20,
+                // time before typing starts
+                startDelay: 7000
+            });
+            $(".typed4").typed({
+                strings: [
+                    // "Hi",
+                    // ", I'm Masoud Darvishian  and I make video games."
+                    "github"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 20,
+                // time before typing starts
+                startDelay: 12000
+            });
+            $(".typed5").typed({
+                strings: [
+                    // "Hi",
+                    // ", I'm Masoud Darvishian  and I make video games."
+                    "stackoverflow"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 20,
+                // time before typing starts
+                startDelay: 13000
+            });
+            $(".typed6").typed({
+                strings: [
+                    // "Hi",
+                    // ", I'm Masoud Darvishian  and I make video games."
+                    "twitter"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 20,
+                // time before typing starts
+                startDelay: 14000
+            });
+            $(".typed7").typed({
+                strings: [
+                    // "Hi",
+                    // ", I'm Masoud Darvishian  and I make video games."
+                    "masoudarvishian@gmail.com"
+                ],
+                // stringsElement: '#typed-strings',
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 30,
+                // time before typing starts
+                startDelay: 14500
+            });
+        });
+
+    </script>
 </head>
 
 <body>
-    <main>
-        <p>Hi, I'm Masoud Darvishian and I make video games.</p>
-        <p>If you would like to find me on-line follow the links below!</p>
-        <nav>
-            <a href="https://github.com/masoudarvishian" target="_blank">github</a><br>
-            <a href="https://stackoverflow.com/users/4588539/masoud-darvishian" target="_blank">stackoverflow</a><br>
-            <a href="https://twitter.com/masoudarvishian" target="_blank">twitter</a><br>
-            <a href="mailto:masoudarvishian@gmail.com" target="_blank">masoudarvishian@gmail.com</a>
-        </nav>
-    </main>
+    <div id="page_wrap">
+        <div class="banner">
+            <div class="typed_wrap">
+                <p>
+                    <span class="typed1"></span>
+                    <span class="typed2"></span>
+                    <span class="typed3"></span>
+                </p>
+            </div>
+            <div class="links">
+                <a  href="https://github.com/masoudarvishian" target="_blank" class="typed4"></a><br>
+                <a  ref="https://stackoverflow.com/users/4588539/masoud-darvishian"  target="_blank" class="typed5"></a><br>
+                <a  href="https://twitter.com/masoudarvishian" target="_blank" class="typed6"></a><br>
+                <a  href="mailto:masoudarvishian@gmail.com" target="_blank" class="typed7"></a><br>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
