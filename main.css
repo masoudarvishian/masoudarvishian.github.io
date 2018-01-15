@@ -14,12 +14,16 @@ main {
 }
 
 nav {
-    padding: 10px 40px;
+    padding: 30px 40px;
 }
 
 p, a {
     font-size: 14px;   
     color: rgb(57, 206, 11);
+}
+
+p {
+    margin-bottom: 5px;
 }
 
 a {
