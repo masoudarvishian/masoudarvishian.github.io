@@ -62,7 +62,7 @@ a:hover {
 
 /*Add custom cursor so it auto inherits font styles*/
 .typed_wrap p::after { 
-  content: '▐';
+  content: '|';
 	display: inline;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
