@@ -11,9 +11,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
-    color: rgb(57, 206, 11);
-    animation: turn-on 4s linear;
-    animation-fill-mode: forwards;
+  color: rgb(57, 206, 11);
+  
 }
 
 .banner {
@@ -66,7 +65,8 @@ a:hover {
 	display: inline;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
-	animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-family: DejaVu Sans, Symbola, Everson Mono, Dingbats, Segoe UI Symbol, Quivira, SunExt-A, FreeSerif, Universalia, unifont;
 }
 
 /*Removes cursor that comes with typed.js*/
@@ -100,6 +100,11 @@ a:hover {
 @media only screen and (min-width: 1024px)  {
     .typed_wrap {
         width: 40vw;
+    }
+
+    body {
+        animation: turn-on 4s linear;
+        animation-fill-mode: forwards;
     }
 }
 
