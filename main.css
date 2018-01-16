@@ -1,45 +1,8 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+html,body {
+    height:100%;
+    margin:0;
+    overflow: hidden;
 }
-
-body {
-    background: #000;
-}
-
-main {
-    padding: 20px;
-}
-
-nav {
-    padding: 30px 40px;
-}
-
-p, a {
-    font-size: 16px;   
-    color: rgb(57, 206, 11);
-}
-
-p {
-    margin-bottom: 5px;
-}
-
-a {
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 5px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#name {
-    border-bottom: 1px dotted rgb(57, 206, 11);
-    cursor: help;
-} */
 
 body {
 	background: #000;
@@ -47,7 +10,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
-	color: rgb(57, 206, 11);
+    color: rgb(57, 206, 11);
+    animation: turn-on 4s linear;
+    animation-fill-mode: forwards;
 }
 
 .banner {
@@ -66,7 +31,7 @@ body {
 }
 
 p, a {
-    font-size: 14px;   
+    font-size: 16px;   
 	color: rgb(57, 206, 11);
 	text-shadow: 1px 1px 2px black, 0 0 10px rgb(48, 247, 64), 0 0 5px rgb(28, 121, 33);
 }
@@ -96,7 +61,7 @@ a:hover {
 
 /*Add custom cursor so it auto inherits font styles*/
 .typed_wrap p::after { 
-	content: '|';
+	content: '▐';
 	display: inline;
 	-webkit-animation: blink 0.7s infinite;
 	-moz-animation: blink 0.7s infinite;
@@ -136,3 +101,150 @@ a:hover {
         width: 40vw;
     }
 }
+
+/* ************* CRT Effect *************** */
+
+.container {
+    height:100%;
+    min-height:100%; /*for mozilla*/
+  }
+
+  .container::after {
+    animation: flicker 0.15s infinite;
+  }
+  
+  html > body .container {
+    height:auto;
+  }
+
+@keyframes flicker {
+    0% {
+      opacity: 0.67026;
+    }
+    5% {
+      opacity: 0.09456;
+    }
+    10% {
+      opacity: 0.30601;
+    }
+    15% {
+      opacity: 0.53132;
+    }
+    20% {
+      opacity: 0.95641;
+    }
+    25% {
+      opacity: 0.87664;
+    }
+    30% {
+      opacity: 0.34645;
+    }
+    35% {
+      opacity: 0.53843;
+    }
+    40% {
+      opacity: 0.95922;
+    }
+    45% {
+      opacity: 0.46669;
+    }
+    50% {
+      opacity: 0.50629;
+    }
+    55% {
+      opacity: 0.89335;
+    }
+    60% {
+      opacity: 0.6491;
+    }
+    65% {
+      opacity: 0.26172;
+    }
+    70% {
+      opacity: 0.82291;
+    }
+    75% {
+      opacity: 0.23964;
+    }
+    80% {
+      opacity: 0.15251;
+    }
+    85% {
+      opacity: 0.9176;
+    }
+    90% {
+      opacity: 0.29222;
+    }
+    95% {
+      opacity: 0.79393;
+    }
+    100% {
+      opacity: 0.21381;
+    }
+  }
+  .container {
+    background: #121010;
+    position: relative;
+    overflow: hidden;
+  }
+  .container::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .container::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 3px, 6px 100%;
+    pointer-events: none;
+  }
+  
+  @keyframes turn-on {
+    0% {
+      transform: scale(1, 0.8) translate3d(0, 0, 0);
+      -webkit-filter: brightness(30);
+      filter: brightness(30);
+      opacity: 1;
+    }
+    3.5% {
+      transform: scale(1, 0.8) translate3d(0, 100%, 0);
+    }
+    3.6% {
+      transform: scale(1, 0.8) translate3d(0, -100%, 0);
+      opacity: 1;
+    }
+    9% {
+      transform: scale(1.3, 0.6) translate3d(0, 100%, 0);
+      -webkit-filter: brightness(30);
+      filter: brightness(30);
+      opacity: 0;
+    }
+    11% {
+      transform: scale(1, 1) translate3d(0, 0, 0);
+      -webkit-filter: contrast(0) brightness(0);
+      filter: contrast(0) brightness(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1, 1) translate3d(0, 0, 0);
+      -webkit-filter: contrast(1) brightness(1.2) saturate(1.3);
+      filter: contrast(1) brightness(1.2) saturate(1.3);
+      opacity: 1;
+    }
+  }
+  
