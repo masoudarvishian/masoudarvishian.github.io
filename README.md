@@ -1,5 +1,3 @@
 # masoudarvishian.github.io
 
-Masoud Darvishian's Website
-
-<a href="https://masoudarvishian.github.io/" target="_blank">Visit the website</a>
+<p>This is my personal <a href="https://masoudarvishian.github.io/" target="_blank">website</a>.</p>
