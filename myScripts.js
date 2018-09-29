@@ -1,7 +1,7 @@
 $(function () {
     $(".typed1").typed({
         strings: [
-            "Hi"
+            "Hello"
         ],
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
         stringsElement: null,
@@ -12,7 +12,7 @@ $(function () {
     });
     $(".typed2").typed({
         strings: [
-            ", I'm Masoud Darvishian and I am a video game designer-programmer."
+            ", I am Masoud Darvishian; a full-stack developer."
         ],
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
         stringsElement: null,
