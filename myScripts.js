@@ -8,7 +8,7 @@ $(function () {
         // typing speed
         typeSpeed: 30,
         // time before typing starts
-        startDelay: 2400
+        startDelay: 2000
     });
     $(".typed2").typed({
         strings: [
