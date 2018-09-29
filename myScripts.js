@@ -19,7 +19,7 @@ $(function () {
         // typing speed
         typeSpeed: 30,
         // time before typing starts
-        startDelay: 3200
+        startDelay: 3400
     });
     $(".typed3").typed({
         strings: [
@@ -30,7 +30,7 @@ $(function () {
         // typing speed
         typeSpeed: 20,
         // time before typing starts
-        startDelay: 8200
+        startDelay: 8400
     });
     $(".typed4").typed({
         strings: [
@@ -41,7 +41,7 @@ $(function () {
         // typing speed
         typeSpeed: 20,
         // time before typing starts
-        startDelay: 13200
+        startDelay: 13400
     });
     $(".typed5").typed({
         strings: [
@@ -52,7 +52,7 @@ $(function () {
         // typing speed
         typeSpeed: 20,
         // time before typing starts
-        startDelay: 14200
+        startDelay: 14400
     });
     $(".typed6").typed({
         strings: [
@@ -63,7 +63,7 @@ $(function () {
         // typing speed
         typeSpeed: 20,
         // time before typing starts
-        startDelay: 15200
+        startDelay: 15400
     });
     $(".typed7").typed({
         strings: [
@@ -74,6 +74,6 @@ $(function () {
         // typing speed
         typeSpeed: 30,
         // time before typing starts
-        startDelay: 15700
+        startDelay: 15900
     });
 });
