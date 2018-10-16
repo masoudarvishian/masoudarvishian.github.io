@@ -12,7 +12,7 @@ $(function () {
     });
     $(".typed2").typed({
         strings: [
-            " I am Masoud Darvishian; a full-stack developer."
+            " I am Masoud Darvishian; a video game designer and programmer."
         ],
         // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
         stringsElement: null,
