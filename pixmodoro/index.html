@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Unity WebGL Player | Pixmodoro</title>
+    <title>Pixmodoro | Online pomodoro application</title>
     <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate('unityContainer', 'Build/pixmodoro.json');
+    </script>
     <style>
       #unityContainer {
         margin: 50px auto !important;
@@ -12,9 +15,6 @@
         border-radius: 10px !important;
       }
     </style>
-    <script>
-      UnityLoader.instantiate('unityContainer', 'Build/Pixmodoro.json');
-    </script>
   </head>
   <body>
     <div
